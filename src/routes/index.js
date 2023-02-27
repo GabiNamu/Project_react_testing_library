@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import Location from '../pages/Location';
 
 import { isPokemonFavoriteByIdType, pokemonType } from '../types';
 import {
@@ -44,6 +45,7 @@ class Routes extends Component {
           render={ () => <FavoritePokemon pokemonList={ favoritePokemon } /> }
         />
         <Route path="/about" component={ About } />
+        <Route path="/location" component={ Location } />
         <Route component={ NotFound } />
       </Switch>
     );

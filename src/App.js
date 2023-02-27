@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 import {
   readFavoritePokemonIds,
@@ -44,6 +44,7 @@ class App extends Component {
           <Link className="link" to="/">{`Home`}</Link>
           <Link className="link" to="/about">{`About`}</Link>
           <Link className="link" to="/favorites">{`Favorite Pokémon`}</Link>
+          <Link className='link' to="/location">{`Locations`}</Link>
         </nav>
         <Routes
           favoritePokemon={ favoritePokemon }

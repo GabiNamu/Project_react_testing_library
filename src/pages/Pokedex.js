@@ -26,6 +26,17 @@ class Pokedex extends React.Component {
     ));
   }
 
+  // componentDidMount() {
+  //   this.realFetch();
+  // }
+
+  // realFetch = async () => {
+  //   const fetchPromise = await fetch('https://pokeapi.co/api/v2/pokemon');
+  //   const jsonResponse = await fetchPromise.json();
+  //   console.log(jsonResponse);
+    
+  // }
+
   fetchFilteredPokemon() {
     const { pokemonList } = this.props;
     const { filteredType } = this.state;
